@@ -12,7 +12,7 @@ var moduleExport = {
 
 moduleExport.lazySizes();
 
-var Theme62 = JSON.parse(document.getElementById('Theme62_settings').textContent);
+Function(document.getElementById('Theme62_settings').textContent)();
 
 Theme62.module = moduleExport;
 
