@@ -64,7 +64,8 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     addResourcesToCache([
       "https://theme62.pages.dev/template/js/script-1.1.8.js",
-      "https://theme62.pages.dev/template/html/offline/offline-a.1.0.html",
+      "https://theme62.pages.dev/template/html/offline/offline-a-1.0.html",
+      "/safelink",
     ])
   );
 });
