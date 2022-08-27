@@ -64,7 +64,7 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     addResourcesToCache([
       "https://theme62.pages.dev/template/js/script-1.1.8.js",
-      "https://theme62.pages.dev/template/html/offline/offline-a-1.0.html",
+      "/@offline-a-1.0.html?path=/template/html/offline",
       "/safelink",
     ])
   );
@@ -75,7 +75,7 @@ self.addEventListener("fetch", (event) => {
     cacheFirst({
       request: event.request,
       preloadResponsePromise: event.preloadResponse,
-      fallbackUrl: "https://theme62.pages.dev/template/html/offline/offline-a.1.0.html",
+      fallbackUrl: "/@offline-a-1.0.html?path=/template/html/offline",
     })
   );
 });
