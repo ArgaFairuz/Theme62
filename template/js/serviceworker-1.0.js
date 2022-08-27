@@ -1,4 +1,4 @@
-const OFFLINE_VERSION = 1;
+const OFFLINE_VERSION = "v1";
 const CACHE_NAME = 'offline';
 const OFFLINE_URL = '/@offline-1.0.html?path=/template/html';
 self.addEventListener('install', (event) => {
