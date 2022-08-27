@@ -1,4 +1,4 @@
-const cacheVersion = "v2.1.1";
+const cacheVersion = "v2.1.2";
 
 const addResourcesToCache = async (resources) => {
   const cache = await caches.open(cacheVersion);
@@ -63,9 +63,7 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("install", (event) => {
   event.waitUntil(
     addResourcesToCache([
-      "https://theme62.pages.dev/template/js/script-1.1.8.js",
       "/@offline-a-1.0.html?path=/template/html/offline",
-      "/safelink",
     ])
   );
 });
