@@ -1,6 +1,6 @@
-const OFFLINE_VERSION = "v1";
+const OFFLINE_VERSION = 'v1';
 const CACHE_NAME = 'offline';
-const OFFLINE_URL = '/@offline-1.0.html?path=/template/html';
+const OFFLINE_URL = '@offline-a-1.0.html?path=/template/html/offline';
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
@@ -33,4 +33,3 @@ self.addEventListener('fetch', (event) => {
     })());
   }
 });
-Footer
