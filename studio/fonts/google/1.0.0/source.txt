@@ -1,2 +1,2 @@
 https://developers.google.com/fonts/docs/developer_api
-https://www.googleapis.com/webfonts/v1/webfonts?key=your_key&sort=alpha|date|popularity|style|trending&capability=woff2|vf
+https://www.googleapis.com/webfonts/v1/webfonts?key=your_key&sort=alpha,date,popularity,style,trending&capability=woff2,vf
